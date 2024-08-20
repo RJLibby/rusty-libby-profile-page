@@ -2,76 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-.topnav{
-    background-color:#cccbbe;
-}
+/*.topnav{*/
+/*    background-color:#cccbbe;*/
+/*}*/
 
-/*navigation links*/
-.topnav a{
-    float: left;
-    color: black;
-    text-align: center;
-    padding:16px 16px;
-    font-size: 26px;
-}
+/*!*navigation links*!*/
+/*.topnav a{*/
+/*    float: left;*/
+/*    color: black;*/
+/*    text-align: center;*/
+/*    padding:16px 16px;*/
+/*    font-size: 26px;*/
+/*}*/
 
-.topnav a:hover{
-    background-color: #494378;
-    color: white;
-}
+/*.topnav a:hover{*/
+/*    background-color: #494378;*/
+/*    color: white;*/
+/*}*/
 
-/*hamburger menu*/
-.hamburger {
-    cursor: pointer;
-    width: 24px;
-    height:24px;
-    transition: all 0.25s;
-    position: relative;
-}
+/*!*hamburger menu*!*/
+/*.hamburger {*/
+/*    cursor: pointer;*/
+/*    width: 24px;*/
+/*    height:24px;*/
+/*    transition: all 0.25s;*/
+/*    position: relative;*/
+/*}*/
 
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom{
-    position: absolute;
-    width: 24px;
-    height: 2px;
-    top:0;
-    left: 0;
-    background: #fff;
-    transform: rotate(0);
-    transition: all 0.5s;
-}
+/*.hamburger-top,*/
+/*.hamburger-middle,*/
+/*.hamburger-bottom{*/
+/*    position: absolute;*/
+/*    width: 24px;*/
+/*    height: 2px;*/
+/*    top:0;*/
+/*    left: 0;*/
+/*    background: #fff;*/
+/*    transform: rotate(0);*/
+/*    transition: all 0.5s;*/
+/*}*/
 
-.hamburger-middle{
-    transform: translateY(7px);
-}
+/*.hamburger-middle{*/
+/*    transform: translateY(7px);*/
+/*}*/
 
-.hamburger-bottom {
-    transform: translateY(14px);
-}
+/*.hamburger-bottom {*/
+/*    transform: translateY(14px);*/
+/*}*/
 
-.open{
-    transform:rotate(90deg);
-}
+/*.open{*/
+/*    transform:rotate(90deg);*/
+/*}*/
 
-.open .hamburger-top{
-    transform: translateY(6px) rotate(45deg) translateX(6px);
+/*.open .hamburger-top{*/
+/*    transform: translateY(6px) rotate(45deg) translateX(6px);*/
 
-}
+/*}*/
 
-.open .hamburger-middle{
-    display: none;
-}
+/*.open .hamburger-middle{*/
+/*    display: none;*/
+/*}*/
 
-.open .hamburger-bottom{
-    transform: translateY(6px) rotate(-45deg) translateX(-6px);
-}
+/*.open .hamburger-bottom{*/
+/*    transform: translateY(6px) rotate(-45deg) translateX(-6px);*/
+/*}*/
 
-#icon1, #icon2, #icon3{
-    display: inline-flex;
-    width:48px;
-    height:48px;
-}
+/*#icon1, #icon2, #icon3{*/
+/*    display: inline-flex;*/
+/*    width:48px;*/
+/*    height:48px;*/
+/*}*/
 
 #linkedin{
     text-align:center;
