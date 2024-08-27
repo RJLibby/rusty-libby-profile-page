@@ -9,7 +9,7 @@
 <header>
 
 <section>
-    <nav class="border-gray-200 bg-[#cccbbe] dark:bg-gray-800 dark:border-gray-700">
+    <nav class="border-gray-200 bg-yellow-50 dark:bg-gray-800 dark:border-gray-700">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
 
@@ -21,7 +21,7 @@
                 </svg>
             </button>
             <div class=" hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-                <ul class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                <ul class="flex flex-col font-medium mt-4 rounded-lg bg-blue-200 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
                     <li>
                         <a href="#" class="block py-2 px-3 md:p-0 text-cyan-800 rounded md:bg-transparent dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Welcome</a>
                     </li>
@@ -41,29 +41,58 @@
 </section>
 
 </header>
-<body class="bg-cyan-700">
+<body class="bg-gradient-to-r from-blue-100 to-blue-300">
 
 
 
-<!--This is what I was thinking Jumbotron-->
+
+<!--Welcome-->
 <section  class=" container bg-gray-600 mx-auto existing-section bg-cover bg-no-repeat bg-[url('public/images/IMG_9112.jpeg')] bg-center pb-96 ">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 ">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">Rusty Libby</h1>
-        <p class="mb-8 text-2xl font-bold text-black  sm:px-16 lg:px-48">Family Man| Leader |Aspiring Web Developer</p>
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-green-100 md:text-5xl lg:text-6xl float ">Rusty Libby</h1>
+        <p class="mb-8 text-2xl font-bold text-green-100  sm:px-16 lg:px-48">Family Man| Leader |Aspiring Web Developer</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"></div>
     </div>
 </section>
 
-<!--About Me-->
- <section id="aboutMe"   class="container mx-auto mt-10 bg-slate-300 py-16">
 
-    <div class="container mx-auto pr-flex-col lg:flex-row gap-12 flex items-center justify-center">
-        <div class="basis-5/6 lg:px-0 px-6 pl-10">
-            <h1 class="text-center font-bold text-4xl">About Me</h1>
-            <p class="ml-10 mr-10">I’m a dedicated professional with over eight years of management experience in the pet cremation industry. Recently, I’ve transitioned into the tech field, where I’m harnessing my problem-solving abilities and leadership skills. I’ve gained proficiency in multiple modern technologies, my journey into tech is driven by a passion for innovation and a commitment to continuous learning.</p>
+
+
+
+
+
+ <section id="aboutMe" class="flex flex-col md:flex-row items-center justify-center bg-green-100 mt-10">
+
+<!--     Download a resume-->
+     <div>
+            <a href="public/images/Rusty-Libby-Resume.pdf" download="Rusty-Libby-Resume-pdf">
+                <button class="pt-5" >Download Rusty's Resume<img src="public/images/img.png"  alt="image of resume"></button>
+            </a>
+        </div>
+
+
+     <!--About Me text-->
+     <div class="pl-10 text-justify ">
+            <h1 class="flex items-center justify-center font-bold text-4xl mb-2 mr-10 pt-6">About Me</h1>
+            <p class="leading-tight tracking-tight text-gray-800 pr-10">I’m a dedicated professional with over eight years of management experience in the pet cremation industry.
+                <br>
+            Recently, I’ve transitioned into the tech field, where I’m harnessing my problem-solving abilities and leadership skills.
+                <br>
+                 My journey into tech is driven by a passion for innovation. and a commitment to continuous learning.  </p>
                 <br>
                 <br>
-        <div class="ml-10 grid grid-cols-4 gap-6">
+        </div>
+
+ </section>
+
+
+
+
+<!-- skills icons       -->
+
+<section class="bg-green-100 pb-12 lg:pl-44 lg:pt-24 pt-16">
+        <h2 class="container mx-auto flex items-center justify-center text-4xl font-bold mb-6">Skills</h2>
+        <div class=" grid grid-cols-5 gap-6 justify-evenly ">
             <div>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="DevIcon"
             width="75" height="75"/>
@@ -130,56 +159,45 @@
             </div>
 
         </div>
-
-
-
-        </div>
-        <div class="flex  basis-1/6 lg:px-0 px-6">
-
-            <a href="#" class=" inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                Learn more
-            </a>
-        </div>
-    </div>
 </section>
 
 
 
 
-
-
-<!--new gallery-->
+<!--Gallery-->
 <section id="gallery">
 
 
         <div class="gallery container mx-auto justify-center">
-            <div class="card">
-                <div class="card-inner">
+         <div class="card" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">Click On Image
                     <div class="card-front">
                         <img src=/images/web-page-screenshot.png alt="Project Image">
+
                     </div>
                     <div class="card-back">
-                        <p> brief description of the project goes here.</p>
+                        <p> Simple color picker that I styled. It uses sliding scales to give you the RGB color values.</p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-            <div class="card-inner">
+            <div class="card" onclick="this.classList.toggle('flipped')">
+            <div class="card-inner">Click On Image
                 <div class="card-front">
-                    <img src="" alt="Project Image">
+                    <img src="/images/web-page-screenshot-3.png" alt="Project Image">
                 </div>
                 <div class="card-back">
-                    <p> brief description of the project goes here.</p>
+                    <p> Grocery list that can add items that you need and remove items that you have shopped for.</p>
                 </div>
             </div>
         </div>
-            <div class="card">
-                <div class="card-inner">
+            <div class="card" onclick="this.classList.toggle('flipped')">
+                <div class="card-inner">Click On Image
                     <div class="card-front">
                         <img src="public/images/web-page-screenshot-2.png" alt="Project Image">
                     </div>
                     <div class="card-back">
-                        <p> brief description of the project goes here.</p>
+                        <p> A team effort. Web application that a team of my self and 3 other developers put together.
+                        Gives you listing of only local restaurants.  </p>
                     </div>
                 </div>
             </div>
@@ -192,7 +210,7 @@
 
 
 <!-- Contact Form -->
-<div class="mb-10 mt-20 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-slate-300 shadow-md border border-gray-300 ">
+<div class="mb-10 mt-20 container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-green-100 shadow-md border border-gray-300 ">
     <div class="bg-white p-6  shadow-md border border-gray-300">
         <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
         <form action="#" method="POST">
@@ -214,7 +232,11 @@
         </form>
     </div>
 
-    <!-- add a paragraph -->
+
+
+
+
+    <!-- Final text -->
     <div id="contact" class="flex items-center">
         <p class="text-gray-700 text-justify pr-6 items-center justify-center pl-5 md:pl-0 lg:pl-0 pb-10">
             I am always open to connecting with professionals and discussing opportunities in the tech industry. You can contact me via email at
@@ -226,7 +248,10 @@
 
 
 
-<footer class="bottom bg-[#cccbbe] rounded-md text-black sm:flex">
+
+
+
+<footer class="bottom bg-yellow-50 rounded-md text-black sm:flex">
     <div class="w-full mx-auto max-w-screen-xl p-6 flex md:flex md:items-center md:justify-between justify-between">
         <a href="https://www.linkedin.com/in/rusty-libby-web-dev/" target="_blank"><img id="linkedin" src="public/images/LinkedIn.png" alt="HTML tutorial"></a>
         <a href="https://github.com/RJLibby?tab=repositories" target="_blank"><img id="github" class="filter invert"  src="public/images/Github.png" alt="HTML tutorial"></a>
